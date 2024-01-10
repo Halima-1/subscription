@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.line{
+    width: 80%;
+    background-color: goldenrod;
+    display: flex;
+    justify-content: space-around;
+}
+.line div{
+    width: 22%;
+    margin: 20px;
+    padding: 50px;
+    background-color: aqua;
+}
