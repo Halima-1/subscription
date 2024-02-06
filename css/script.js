@@ -1,15 +1,26 @@
 function display(){
     
     // home
-    let display= document.getElementById('hom')
-    if(display.classList.contains('show')){
-        display.classList.remove('show');
-        display.classList.add('hide');
+    let display= document.getElementById('sideNav');
+    if(display.classList.contains('showing')){
+        display.classList.remove('showing');
+        display.classList.add('hidden');
     }else{
-        display.classList.remove('hide');
-        display.classList.add('show');
+        display.classList.remove('hidden');
+        display.classList.add('showing');
     }
-    
+
+
+    // dashboard
+    let dashboard = document.getElementById('dashboard');
+    if(dashboard.classList.contains('show')){
+        dashboard.classList.remove('show');
+        dashboard.classList.add('hide');
+    }else{
+        dashboard.classList.remove('hide');
+        dashboard.classList.add('show');
+    }
+
     // airtime
     let airtime = document.getElementById('air');
     if(airtime.classList.contains('show')){
@@ -71,16 +82,16 @@ function display(){
     }
     
     // display.classList.toggle('show')
-    let sideNav = document.getElementById('sideNav')
-    if (sideNav.classList.contains('showing')){
-        sideNav.classList.remove('showing');
-        sideNav.classList.add('hidden');
-    }
-    else{
-        sideNav.classList.add('showing');
-        sideNav.classList.remove('hidden');
+    // let sideNav = document.getElementById('sideNav')
+    // if (sideNav.classList.contains('showing')){
+    //     sideNav.classList.remove('showing');
+    //     sideNav.classList.add('hidden');
+    // }
+    // else{
+    //     sideNav.classList.add('showing');
+    //     sideNav.classList.remove('hidden');
 
-    }
+    // }
        }
 
        fetch("https://randomuser.me/api/").then(function(data){
@@ -93,4 +104,4 @@ function display(){
          document.querySelector('#name').innerHTML=fullName;
         })
         let site =`<a href="https://superjara.com">superjara</a>`
-        alert (`Welcome to superclone dashboard.Superclone is a cloned superjara website. you can visit the site in superjara.com`)
+        // alert (`Welcome to superclone dashboard.Superclone is a cloned superjara website. you can visit the site in superjara.com`)

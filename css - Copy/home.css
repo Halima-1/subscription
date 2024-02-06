@@ -95,7 +95,9 @@
     color: gold;
     text-decoration: underline;
 }
-
+.side a:visited{
+    color: rgb(44, 172, 44);
+}
 .show{
     display: block;
 }
@@ -401,11 +403,11 @@ marquee{
     float: left;
     clear: both;
 }
-/* .app{
+.app{
     /* display: flex;
     justify-content: space-around; */
     /* flex-direction: column; */
-
+}
 .faq span{
     margin: 15px 0;
     color: rgb(228, 215, 215);
